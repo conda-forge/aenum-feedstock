@@ -14,14 +14,15 @@ Summary: Advanced Enumerations (compatible with Python's stdlib Enum), NamedTupl
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/aenum-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/aenum-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/aenum-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/aenum-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/aenum-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/aenum-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/aenum-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/aenum-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/aenum/badges/version.svg)](https://anaconda.org/conda-forge/aenum)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/aenum/badges/downloads.svg)](https://anaconda.org/conda-forge/aenum)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-aenum-green.svg)](https://anaconda.org/conda-forge/aenum) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/aenum.svg)](https://anaconda.org/conda-forge/aenum) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/aenum.svg)](https://anaconda.org/conda-forge/aenum) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/aenum.svg)](https://anaconda.org/conda-forge/aenum) |
 
 Installing aenum
 ================
