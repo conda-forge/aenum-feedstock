@@ -1,6 +1,6 @@
 {% set name = "aenum" %}
-{% set version = "2.1.2" %}
-{% set sha256 = "a3208e4b28db3a7b232ff69b934aef2ea1bf27286d9978e1e597d46f490e4687" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "80f14366578d84f6bccb0670259744cb3a7f2ab504480c306238a23cdd569457" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
