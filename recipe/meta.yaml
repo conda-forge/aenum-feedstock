@@ -27,7 +27,11 @@ requirements:
 test:
   imports:
     - aenum
-
+  requires:
+    - pip
+  commands:
+    - pip check
+    
 about:
   home: https://bitbucket.org/stoneleaf/aenum
   license: BSD-3-Clause
