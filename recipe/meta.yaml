@@ -1,5 +1,5 @@
 {% set name = "aenum" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c94fde69eebf8d478d68f0d96c61178299d9a19465ef5effa326ebee7536c203
+  sha256: a4334cabf47c167d44ab5a6198837b80deec5d5bad1b5cf70c966c3a330260e8
 
 build:
   noarch: python
