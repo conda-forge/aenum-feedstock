@@ -1,6 +1,5 @@
 {% set name = "aenum" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "80f14366578d84f6bccb0670259744cb3a7f2ab504480c306238a23cdd569457" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -9,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: c94fde69eebf8d478d68f0d96c61178299d9a19465ef5effa326ebee7536c203
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -27,7 +26,11 @@ requirements:
 test:
   imports:
     - aenum
-
+  requires:
+    - pip
+  commands:
+    - pip check
+    
 about:
   home: https://bitbucket.org/stoneleaf/aenum
   license: BSD-3-Clause
