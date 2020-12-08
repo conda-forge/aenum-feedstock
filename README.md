@@ -5,11 +5,9 @@ Home: https://bitbucket.org/stoneleaf/aenum
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aenum-feedstock/blob/master/LICENSE.txt)
 
 Summary: Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples,
-
-
 
 Current build status
 ====================
