@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: aenum
-  version: 3.1.16
+  version: 3.1.17
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://github.com/ethanfurman/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 4c7a5fb76a04ad8dc0c82b13c4cd858b755c69d16c2060a248bf3380a4d1067e
+  url: https://pypi.org/packages/source/a/aenum/aenum-${{ version }}.tar.gz
+  sha256: a969a4516b194895de72c875ece355f17c0d272146f7fda346ef74f93cf4d5ba
 
 build:
   number: 0
@@ -30,7 +30,9 @@ tests:
       imports:
         - aenum
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: BSD-3-Clause
